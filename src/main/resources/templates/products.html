@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>All-Products - RedStore |Ecommerce </title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/static/images/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="home.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="/static/images/cart.png" width="30px" height="30px"></a>
+            <img src="/static/images/menu.png" class="menu-icon" width="30px" height="30px" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!--  Featured Categories-->
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="/static/images/product-1.jpg">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="/static/images/product-2.jpg">
+                <h4>Black Shoes</h4>
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="/static/images/product-3.jpg">
+                <h4>Cool Grey Tracks for Boys</h4>
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="/static/images/product-4.jpg">
+                <h4>Grey T-Shirt</h4>
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="/static/images/product-1.jpg">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="/static/images/product-2.jpg">
+                    <h4>Black Shoes</h4>
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="/static/images/product-3.jpg">
+                    <h4>Cool Grey Tracks for Boys</h4>
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="/static/images/product-4.jpg">
+                    <h4>Grey T-Shirt</h4>
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="/static/images/product-5.jpg">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="/static/images/product-6.jpg">
+                    <h4>Black Shoes</h4>
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="/static/images/product-7.jpg">
+                    <h4>Cool Grey Tracks for Boys</h4>
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="/static/images/product-8.jpg">
+                    <h4>Grey T-Shirt</h4>
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="/static/images/product-9.jpg">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="/static/images/product-10.jpg">
+                    <h4>Black Shoes</h4>
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="/static/images/product-11.jpg">
+                    <h4>Cool Grey Tracks for Boys</h4>
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="/static/images/product-12.jpg">
+                    <h4>Grey T-Shirt</h4>
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download the App for Android and IOS</p>
+                    <div class="app-logo">
+                        <img src="/static/images/play-store.png">
+                        <img src="/static/images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="/static/images/logo-white.png">
+                    <p>Our Purpose is to Sustainably make the Pleasure Benifits of sports Accessible to many of the
+                        People</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog posts</li>
+                        <li>Return Plolicy</li>
+                        <li>Join Affiliates</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Easy Tutorials</p>
+        </div>
+    </div>
+
+    <!-- js for togglemenu -->
+    <script>
+        var MenuItems = document.getElementById('menuitems');
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+
+</html>
