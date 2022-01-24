@@ -11,11 +11,6 @@ public class MainController {
         return "index";
     }
 
-    @RequestMapping("/index")
-    public String Indexs() {
-        return "index";
-    }
-
     @RequestMapping("/home")
     public String Home() {
         return "home";

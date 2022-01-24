@@ -10,6 +10,7 @@ import javax.persistence.Id;
 @Data
 @Getter
 @Setter
+@RequiredArgsConstructor
 @AllArgsConstructor
 @NoArgsConstructor
 public class Login {
