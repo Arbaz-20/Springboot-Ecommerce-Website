@@ -22,19 +22,19 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <a href="/Ecommerce-Website/Home.html"><img src="/static/images/logo.png" width="125px"></a>
+                <a href="/Ecommerce-Website/Home.html"><img th:src="@{/images/logo.png}" width="125px"></a>
             </div>
             <nav>
                 <ul id="menuitems">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="products">Products</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="home">Account</a></li>
+                    <li><a th:href="@{/}">Home</a></li>
+                    <li><a th:href="@{/products}">Products</a></li>
+                    <li><a th:href="@{/about}">About</a></li>
+                    <li><a th:href="@{/contact}">Contact</a></li>
+                    <li><a th:href="@{/home}">Account</a></li>
                 </ul>
             </nav>
-            <a href="cart.html"><img src="/static/images/cart.png" width="30px" height="30px"></a>
-            <img src="/static/images/menu.png" class="menu-icon" width="30px" height="30px" onclick="menutoggle()">
+            <a th:href="@{/cart}"><img th:src="@{/images/cart.png}" width="30px" height="30px"></a>
+            <img th:src="@{/images/menu.png}" class="menu-icon" width="30px" height="30px" onclick="menutoggle()">
         </div>
     </div>
 
@@ -45,7 +45,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <img src="/static/images/image1.png" width="100%">
+                    <img th:src="@{/images/image1.png}" width="100%">
                 </div>
                 <div class="col-2">
                     <div class="form-container">
@@ -84,12 +84,12 @@
                     <h3>Download Our App</h3>
                     <p>Download the App for Android and IOS</p>
                     <div class="app-logo">
-                        <img src="/static/images/play-store.png">
-                        <img src="/static/images/app-store.png">
+                        <img th:src="@{/images/play-store.png}">
+                        <img th:src="@{/images/app-store.png}">
                     </div>
                 </div>
                 <div class="footer-col-2">
-                    <img src="/static/images/logo-white.png">
+                    <img th:src="@{/images/logo-white.png}">
                     <p>Our Purpose is to Sustainably make the Pleasure Benifits of sports Accessible to many of the
                         People</p>
                 </div>

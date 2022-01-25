@@ -12,8 +12,13 @@ public class MainController {
     }
 
     @RequestMapping("/home")
-    public String Home() {
+    public String Account() {
         return "home";
+    }
+
+    @RequestMapping("/contact")
+    public String Contact() {
+        return "contact";
     }
 
     @RequestMapping("/products")

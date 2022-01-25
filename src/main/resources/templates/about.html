@@ -24,19 +24,19 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="/static/images/logo.png" width="125px">
+                    <img th:src="@{/images/logo.png}" width="125px">
                 </div>
                 <nav>
                     <ul id="menuitems">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="products">Products</a></li>
-                        <li><a href="about">About</a></li>
-                        <li><a href="contact">Contact</a></li>
-                        <li><a href="home">Account</a></li>
+                        <li><a th:href="@{/}">Home</a></li>
+                        <li><a th:href="@{/products}">Products</a></li>
+                        <li><a th:href="@{/about}">About</a></li>
+                        <li><a th:href="@{/contact}">Contact</a></li>
+                        <li><a th:href="@{/home}">Account</a></li>
                     </ul>
                 </nav>
-                <a href="cart.html"><img src="/static/images/cart.png" width="30px" height="30px"></a>
-                <img src="/static/images/menu.png" class="menu-icon" width="30px" height="30px" onclick="menutoggle()">
+                <a th:href="@{/cart}"><img th:src="@{/images/cart.png}" width="30px" height="30px"></a>
+                <img th:src="@{/images/menu.png}" class="menu-icon" width="30px" height="30px" onclick="menutoggle()">
             </div>
         </div>
     </div>
