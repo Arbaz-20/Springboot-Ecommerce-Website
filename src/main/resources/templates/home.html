@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="utf-8">
@@ -54,14 +54,15 @@
                             <span onclick="register()">SignUp</span>
                             <hr id="indicator">
                         </div>
-                        <form id="LoginForm">
-                            <input email="email" type="text" placeholder="Enter Email">
+                        <form id="LoginForm" th:action="${login}" method="post">
+                            <input email="email" type="text" placeholder="Enter Email Address">
                             <input name="passwd" type="password" placeholder="Enter Password">
+                            <h5><span>This is error</span></h5>
                             <button type="submit" class="btn">Login</button>
                             <a href="">Forgot Password</a>
                         </form>
 
-                        <form id="RegisterForm">
+                        <form id="RegisterForm" th:action="${signup}" method="post">
                             <input name="email" type="email" placeholder="Enter Email">
                             <input name="password" type="password" placeholder="Enter Password">
                             <button type="submit" class="btn">Sign Up</button>

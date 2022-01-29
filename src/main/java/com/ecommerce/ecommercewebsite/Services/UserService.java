@@ -2,7 +2,7 @@ package com.ecommerce.ecommercewebsite.Services;
 
 import java.util.List;
 import com.ecommerce.ecommercewebsite.DAO.UserRepository;
-import com.ecommerce.ecommercewebsite.Entity.User;
+import com.ecommerce.ecommercewebsite.Entity.User.User;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

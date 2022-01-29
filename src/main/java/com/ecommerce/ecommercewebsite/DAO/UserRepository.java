@@ -2,7 +2,7 @@ package com.ecommerce.ecommercewebsite.DAO;
 
 import java.util.List;
 
-import com.ecommerce.ecommercewebsite.Entity.User;
+import com.ecommerce.ecommercewebsite.Entity.User.User;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.web.bind.annotation.PathVariable;
