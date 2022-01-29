@@ -1,4 +1,4 @@
-package com.ecommerce.ecommercewebsite.Services;
+package com.ecommerce.ecommercewebsite.Services.UserService;
 
 import java.util.List;
 import com.ecommerce.ecommercewebsite.DAO.UserRepository;

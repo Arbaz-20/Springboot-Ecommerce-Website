@@ -3,7 +3,7 @@ package com.ecommerce.ecommercewebsite.Controller.User;
 import java.util.List;
 import javax.validation.Valid;
 import com.ecommerce.ecommercewebsite.Entity.User.User;
-import com.ecommerce.ecommercewebsite.Services.UserService;
+import com.ecommerce.ecommercewebsite.Services.UserService.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
