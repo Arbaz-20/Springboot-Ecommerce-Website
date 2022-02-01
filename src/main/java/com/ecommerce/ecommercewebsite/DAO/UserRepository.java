@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface UserRepository extends CrudRepository<User, Integer> {
 
     @Query(value = "Select * from users", nativeQuery = true)
-    public List<User> getallusers();
+    public List<User> getAllUsers();
 
     @Query(value = "select * from users where id=?", nativeQuery = true)
     public User getUserByUserId(@PathVariable("") int id);

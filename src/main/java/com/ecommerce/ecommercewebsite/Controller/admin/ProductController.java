@@ -1,15 +1,46 @@
 package com.ecommerce.ecommercewebsite.Controller.admin;
 
 import com.ecommerce.ecommercewebsite.Entity.Product.Product;
-import com.ecommerce.ecommercewebsite.Services.UserService.UserService;
+import com.ecommerce.ecommercewebsite.Services.ProductService.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 public class ProductController {
 
     @Autowired
-    private UserService userService;
+    private ProductService productService;
 
+    @PostMapping("/product")
+    public String saveProduct(@Valid @ModelAttribute("product") Product product, BindingResult result, Model model){
+        if(result.hasErrors()){
+            model.addAttribute("error",result);
+            return "product";
+        }
+        else{
+            productService.saveProduct(product);
+        }
+        model.addAttribute("message","Product added Successfully");
+        return"product";
+    }
+
+    @GetMapping("/product/{id}")
+    public Product getProductById(@PathVariable("id") int id){
+            Product product = productService.getProductById(id);
+            return product;
+    }
+
+    @GetMapping("/products")
+    public ModelAndView getAllProducts(Model model){
+        List<Product> products = productService.getAllProducts();
+        ModelAndView m = (ModelAndView) model.addAttribute("allProducts",products);
+        return m;
+    }
 
 }

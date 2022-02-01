@@ -21,8 +21,8 @@ public class UserService {
         return (List<User>) userRepository.saveAll(users);
     }
 
-    public List<User> getallUsers() {
-        return (List<User>) userRepository.getallusers();
+    public List<User> getAllUsers() {
+        return (List<User>) userRepository.getAllUsers();
     }
 
     public User getUserByEmail(String email) {

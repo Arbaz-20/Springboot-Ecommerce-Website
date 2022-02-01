@@ -36,7 +36,7 @@ public class UserController {
             model.addAttribute("error", result);
             return "home";
         } else {
-            List<User> users = userservice.getallUsers();
+            List<User> users = userservice.getAllUsers();
             if(!users.contains(user) ){
                 model.addAttribute("error","Email Doesn't Exists");
                 return "home";
