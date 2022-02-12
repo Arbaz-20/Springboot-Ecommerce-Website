@@ -1,4 +1,4 @@
-package com.ecommerce.ecommercewebsite.Controller.User;
+package com.ecommerce.ecommercewebsite.Controller.Login;
 
 import java.util.List;
 import javax.validation.Valid;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class UserController {
+public class LoginController {
 
     @Autowired
     private UserService userservice;
@@ -42,7 +42,7 @@ public class UserController {
                 return "home";
             }
         }
-        return "index";
+        return "home";
     }
 
 }

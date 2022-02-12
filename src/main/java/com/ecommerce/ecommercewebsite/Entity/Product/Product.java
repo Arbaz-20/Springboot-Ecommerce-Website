@@ -28,6 +28,6 @@ public class Product {
     private int ratings;
 
     @Column(name = "ProductImage")
-    private Byte[] productimage;
+    private Byte[] productImage;
 
 }

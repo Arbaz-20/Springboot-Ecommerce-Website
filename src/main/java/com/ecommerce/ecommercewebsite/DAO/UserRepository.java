@@ -18,4 +18,7 @@ public interface UserRepository extends CrudRepository<User, Integer> {
     @Query(value = "select * from users where email=?", nativeQuery = true)
     public User findUserByEmail(@PathVariable("") String email);
 
+    @Query(value = "delete from user where id=?",nativeQuery = true)
+    public User deleteUserById(@PathVariable("") int id);
+
 }
