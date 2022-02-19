@@ -3,10 +3,7 @@ package com.ecommerce.ecommercewebsite.Controller.admin;
 import com.ecommerce.ecommercewebsite.Entity.User.User;
 import com.ecommerce.ecommercewebsite.Services.UserService.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -38,5 +35,11 @@ public class UserController {
     public String deleteUser(@PathVariable("id") int id){
         userService.deleteUserById(id);
         return "User deleted Successfully";
+    }
+
+    @PutMapping("/updateUser/{id}")
+    public String updateUser(@PathVariable("id")int id,User user){
+        userService.saveUser(user);
+        return "User updated Successfully";
     }
 }
