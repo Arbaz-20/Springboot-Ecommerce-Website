@@ -18,7 +18,7 @@ public interface ProductRepository extends JpaRepository<Product,Integer> {
     @Query(value = "delete product where id=?",nativeQuery = true)
     public Product deleteProductById(int id);
 
-    @Query(value = "delete * from product")
+    @Query(value = "delete * from product",nativeQuery = true)
     public List<Product> deleteAllProducts();
 
     @Query(value = "Update product set product=? where id=?",nativeQuery = true)
